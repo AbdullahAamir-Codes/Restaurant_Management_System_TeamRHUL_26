@@ -123,5 +123,3 @@ class Notification(db.Model):
             self.message = "Order for Client (ID: " + str(self.user_id) + ")" + " is being prepared for table: " + str(self.table_number)
         elif self.notification_type == 'ready':
             self.message = "Order for Client (ID: " + str(self.user_id) + ")" + " ready to be delivered to table: " + str(self.table_number)
-
-
